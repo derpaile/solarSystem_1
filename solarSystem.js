@@ -30,7 +30,7 @@ function setup(){
 
 function draw(){
 
-  background(25);
+  background(15);
 //  directionalLight(255,255,255,10,-200,-60);
 
   pointLight(255,255,255,0,0,0)
