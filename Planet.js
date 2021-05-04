@@ -7,15 +7,9 @@ class Planet {
     this.angle = random(TWO_PI);
     this.distance = d_;
 
-    this.orbitSpeed = random(-0.03, 0.03);
+    this.orbitSpeed = random(-0.01, 0.01);
 
     this.isSun = isSun_;
-    // this.position = new p5.Vector(x_,y_,z_);
-    // this.velocity = new p5.Vector(1,1,1);
-    // this.mass = mass;
-    // this.distance = d_;
-    // this.dt = 0.001;
-
 
     }
 
@@ -25,13 +19,6 @@ class Planet {
 
 
 
-    // this.dx = (this.a* (this.y - this.x)) *this.dt;
-    // this.dy =  (this.x* (this.b-this.z)-this.y) *this.dt;
-    // this.dz = (this.x*this.y - this.c*this.z)  *this.dt;
-    //
-    // this.x = this.x + this.dx;
-    // this.y = this.y + this.dy;
-    // this.z = this.z + this.dz;
 
 
 
@@ -40,20 +27,20 @@ class Planet {
 
     this.planets = new Array(total);
 
+    for (let i = 0; i < this.planets.length; i++){
 
-
-    for (let i = 0; i < total; i++){
-
+      // let r = this.radius * 0.2;
+      // let d = random (50,150)/level*2;
       let r = this.radius * 0.2;
-      let d = random (50,150)/level*2;
+      let d = random (10,50)/level*5;
 
       this.planets[i] = new Planet(r,d,false);
 
-      if(level < 2 ){
+      if(level < 5 ){
 
         let numOfplanets = int(random(0,4))
 
-        this.planets[i].spawnMoons(numOfplanets, level+1);
+        this.planets[i].spawnMoons(3, level+1);
       }
     }
 
