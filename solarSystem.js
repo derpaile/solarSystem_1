@@ -12,7 +12,6 @@ var scaling = 2;
 function setup(){
   createCanvas(960*scaling, 540*scaling, WEBGL);
 
-  frameRate(10);
 
   button = createButton('add Planet');
   button.mousePressed(createPlanet);
