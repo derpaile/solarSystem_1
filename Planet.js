@@ -7,7 +7,7 @@ class Planet {
     this.angle = random(TWO_PI);
     this.distance = d_;
 
-    this.orbitSpeed = random(-0.01, 0.01);
+    this.orbitSpeed = random(-0.03, 0.03);
 
     this.isSun = isSun_;
     // this.position = new p5.Vector(x_,y_,z_);
