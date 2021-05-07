@@ -4,10 +4,12 @@ class Planet {
   constructor(R_,d_,isSun_) {
 
     this.radius = R_;
-    this.angle = random(TWO_PI);
+    this.phi = random(TWO_PI);
+    this.theta = random(TWO_PI);
     this.distance = d_;
 
     this.orbitSpeed = random(-0.01, 0.01);
+    this.orbitSpeed2 = random(0,0.01);
 
     this.isSun = isSun_;
 
@@ -52,8 +54,8 @@ class Planet {
 
     fill(255);
     noStroke();
-    rotateY(this.angle);
-
+    rotateY(this.phi);
+    rotateZ(this.theta);
     translate(this.distance,0);
 
     if (this.isSun === true){
@@ -86,8 +88,8 @@ class Planet {
 
 orbit(){
 
-  this.angle = this.angle + this.orbitSpeed;
-
+  this.phi = this.phi + this.orbitSpeed;
+  this.theta = this.theta + this.orbitSpeed2;
   if (this.planets != null){
 
     for (let i = 0; i < this.planets.length;i++) {
