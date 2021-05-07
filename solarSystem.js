@@ -21,7 +21,7 @@ function setup(){
   translate(width/2,height/2);
   let angle = 0;
 
-  sun = new Planet(height/13,0,true)
+  sun = new Planet(height/10,0,true)
   sun.spawnMoons(noOfchildren,layers);
 }
 
@@ -29,7 +29,7 @@ function setup(){
 
 function draw(){
 
-  background(25);
+  background(40);
 
   pointLight(255,255,255,0,0,0)
   sun.show();
