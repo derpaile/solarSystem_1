@@ -21,7 +21,7 @@ function setup(){
   translate(width/2,height/2);
   let angle = 0;
 
-  sun = new Planet(40,0,true)
+  sun = new Planet(height/13,0,true)
   sun.spawnMoons(noOfchildren,layers);
 }
 
@@ -53,7 +53,7 @@ function preload(){
 
 function respawn(){
   sun.planets = [];
-  sun = new Planet(50,0,true)
+  sun = new Planet(height/13,0,true)
   sun.spawnMoons(int(random(2,5)),int(random(1,3)));
 
 }
