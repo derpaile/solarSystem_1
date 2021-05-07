@@ -32,7 +32,7 @@ class Planet {
       // let r = this.radius * 0.2;
       // let d = random (50,150)/level*2;
       let r = this.radius * 0.3;
-      let d = 500/level;
+      let d = 1000/level;
 
       this.planets[i] = new Planet(r,d,false);
 
