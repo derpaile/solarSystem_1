@@ -7,7 +7,7 @@ class Planet {
     this.angle = random(TWO_PI);
     this.distance = d_;
 
-    this.orbitSpeed = random(-0.02, 0.02);
+    this.orbitSpeed = random(-0.01, 0.01);
 
     this.isSun = isSun_;
 
@@ -20,7 +20,7 @@ class Planet {
 
 
 
-
+ 
 
 
   spawnMoons(total,level) {
@@ -36,7 +36,7 @@ class Planet {
 
       this.planets[i] = new Planet(r,d,false);
 
-      if(level < 5 ){
+      if(level < 2 ){
 
         let numOfplanets = int(random(2,4))
 
