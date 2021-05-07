@@ -7,7 +7,7 @@ class Planet {
     this.angle = random(TWO_PI);
     this.distance = d_;
 
-    this.orbitSpeed = random(-0.01, 0.01);
+    this.orbitSpeed = random(-0.02, 0.02);
 
     this.isSun = isSun_;
 
