@@ -8,7 +8,7 @@ class Planet {
     this.theta = random(TWO_PI);
     this.distance = d_;
 
-    this.orbitSpeed = random(-0.01, 0.01);
+    this.orbitSpeed = random(-0.005, 0.005);
     this.orbitSpeed2 = random(0,0.01);
 
     this.isSun = isSun_;
@@ -34,7 +34,7 @@ class Planet {
       // let r = this.radius * 0.2;
       // let d = random (50,150)/level*2;
       let r = this.radius * 0.3;
-      let d = 1000/level;
+      let d = 800/(level+1);
 
       this.planets[i] = new Planet(r,d,false);
 
